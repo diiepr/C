@@ -14,6 +14,7 @@ int main()
         printf("\nDigite um numero para a segunda matriz: ");
         scanf("%i", &Matriz2[Cont]);
     }
+    printf("\nA soma das duas matrizes e: \n");
     for (Cont = 0; Cont <=19; Cont ++)
     {
         Matriz3[Cont] = Matriz1[Cont] + Matriz2[Cont];
