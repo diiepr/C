@@ -9,6 +9,7 @@ int main()
       printf("Digite um Numero: ");
       scanf("%i", &Matriz1[Cont]);
   }
+  printf("\nSeu vetor invertido e: \n");
   for (Cont = 0; Cont <=9; Cont++)
   {
       Matriz2[Cont] = Matriz1[Cont];
