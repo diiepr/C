@@ -1,3 +1,6 @@
+// Exercício que pede uma palavra e uma letra //
+// Retorna o elemento em que a letra se encontra //
+
 #include <stdio.H>
 #include <string.h>
 #include <ctype.h>

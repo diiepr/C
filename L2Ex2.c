@@ -1,3 +1,5 @@
+// Exercício identifica as peças e retorna a quantidade de cada uma delas //
+
 #include <stdio.h>
 
 int main()

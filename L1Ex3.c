@@ -1,3 +1,6 @@
+// Exercício pede valores para dois vetores //
+// Retorna um vetor com valores intercalados //
+
 #include <stdio.h>
 
 int main()

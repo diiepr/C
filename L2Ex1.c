@@ -1,4 +1,6 @@
-// Exercício para ler uma matriz 12x12 e calcular a soma ou média de uma linha específica, dependendo da operação escolhida pelo usuário.
+// Exercício para ler uma matriz 12x12 //
+// Retorna o calculo da soma ou média de uma linha específica //
+
 #include <stdio.h>
 
 int main() {

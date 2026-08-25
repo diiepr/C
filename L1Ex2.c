@@ -1,3 +1,6 @@
+// Exercício pede valores para dois vetores //
+// Retorna a soma em outro vetor //
+
 #include <stdio.h>
 
 int main()

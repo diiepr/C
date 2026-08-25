@@ -1,3 +1,6 @@
+// Exercício que pede uma palavra e uma letra //
+// Retorna a quantidade de vezes em que a letra aparece na palavra //
+
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>

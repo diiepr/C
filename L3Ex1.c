@@ -1,3 +1,5 @@
+// Exercício que calcula a quantidade de vogais e modifica elas por outras letras. //
+
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>

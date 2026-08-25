@@ -1,3 +1,6 @@
+// Exercício calcula lampâdas nescessárias, totais e a potência //
+// De acordo com o número de cômodos, classe, comprimento e largura //
+
 #include <stdio.h>
 
 int main()
