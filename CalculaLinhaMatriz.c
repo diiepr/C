@@ -2,17 +2,13 @@
 // Retorna o calculo da soma ou média de uma linha específica //
 
 #include <stdio.h>
+#include <ctype.h>
 
 int main() {
 
     float M[12][12], soma = 0, media = 0;
     int Linha, i, j;
     char Operacao;
-    
-    printf("Digite a linha desejada: ");
-    scanf("%d", &Linha);
-    printf("Digite a operacao desejada (S para soma, M para media): ");
-    scanf(" %c", &Operacao);
 
     for (i = 0; i < 12; i++) {
         for (j = 0; j < 12; j++) {
@@ -20,6 +16,13 @@ int main() {
             scanf("%f", &M[i][j]);
         }
     }
+
+    printf("Digite a linha desejada: ");
+    scanf("%d", &Linha);
+    printf("Digite a operacao desejada (S para soma, M para media): ");
+    scanf(" %c", &Operacao);
+
+    Operacao = toupper(Operacao);
     if (Operacao == 'S') {
         for (j = 0; j < 12; j++) {
             soma += M[Linha][j];
