@@ -17,14 +17,19 @@ void DecodificaRA(char Numero[14])
     
     strncpy(UE, ptr, 3);
     ptr += i;
+
     strncpy(Curso, ptr, 3);
     ptr += i;
+
     strncpy(AnoIngresso, ptr, 2);
     ptr += j;
+
     SemestreIngresso = *ptr;
     ptr++;
+
     Periodo = *ptr;
     ptr++;
+    
     strncpy(NumAluno, ptr, 3);
 
 
