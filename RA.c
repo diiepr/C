@@ -10,28 +10,20 @@ void DecodificaRA(char Numero[14])
     char SemestreIngresso;
     char Periodo;
     char NumAluno[4] = {0};
-    int const i = 3;
-    int const j = 2;
 
     char *ptr = Numero;
     
     strncpy(UE, ptr, 3);
-    ptr += i;
+    strncpy(Curso, ptr + 3, 3);
+    strncpy(AnoIngresso, ptr + 6, 2);
+    SemestreIngresso = *(ptr + 8);
+    Periodo = *(ptr + 9);
+    strncpy(NumAluno, ptr + 10, 3);
 
-    strncpy(Curso, ptr, 3);
-    ptr += i;
-
-    strncpy(AnoIngresso, ptr, 2);
-    ptr += j;
-
-    SemestreIngresso = *ptr;
-    ptr++;
-
-    Periodo = *ptr;
-    ptr++;
-    
-    strncpy(NumAluno, ptr, 3);
-
+    UE[3] = '\0';
+    Curso[3] = '\0';
+    AnoIngresso[2] = '\0';
+    NumAluno[3] = '\0';
 
     if (strcmp(UE, "003") == 0)
         printf("\nUnidade: Fatec Sorocaba.\n");
