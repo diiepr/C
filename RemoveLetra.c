@@ -44,7 +44,7 @@ int main ()
     char Numero [106];
 
     printf ("Digite um número: ");
-    scanf(" %s", &Numero);
+    scanf(" %s", Numero);
     printf("Digite o número que vc deseja remover: ");
     scanf(" %c", &Remover);
     printf("O número corrigido é: ");
