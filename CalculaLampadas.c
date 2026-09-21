@@ -22,6 +22,22 @@ int main()
         printf("Digite a classe: ");
         scanf("%i", &classe);
 
+         if (classe == 1)
+            watts = 10;
+        else if (classe == 2)
+            watts = 15;
+        else if (classe == 3)
+            watts = 18;
+        else if (classe == 4)
+            watts = 20;
+        else if (classe == 5)
+            watts = 25;
+        else
+        {
+            printf("Classe invalida.\n");
+            return 1;
+        }
+
         printf("Digite o comprimento: ");
         scanf("%i", &comprimento);
 
@@ -30,39 +46,17 @@ int main()
 
         area = comprimento * largura;
 
-        if (classe == 1)
-        {
-            watts = 10;
-        }
-        else if (classe == 2)
-        {
-            watts = 15;
-        }
-        else if (classe == 3)
-        {
-            watts = 18;
-        }
-        else if (classe == 4)
-        {
-            watts = 20;
-        }
-        else if (classe == 5)
-        {
-            watts = 25;
-        }
-
         potencia = area * watts;
 
         lampadas = potencia / 60;
 
         if (potencia % 60 != 0)
-        {
             lampadas++;
-        }
 
         printf("Area: %i m2\n", area);
         printf("Potencia: %i W\n", potencia);
         printf("Lampadas necessarias: %i\n", lampadas);
+
 
         totalLampadas = totalLampadas + lampadas;
         totalPotencia = totalPotencia + potencia;
