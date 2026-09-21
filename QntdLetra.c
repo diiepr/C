@@ -19,7 +19,7 @@ int main()
     scanf(" %c", &letra);
 
     for (i = 0; i < strlen(Palavra); i++){
-        Palavra[i] = (char)tolower((unsigned char)Palavra[i]);
+        Palavra[i] = tolower(Palavra[i]);
         if (Palavra[i] == letra)
             qntd_letras++;
     }
