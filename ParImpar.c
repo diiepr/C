@@ -11,15 +11,15 @@ void TrocaCaracteres(char *Mensagem)
     {
         if (i % 2 == 0)
         {
-            if (*(Mensagem + i) == 'A' || *(Mensagem + i) == 'a' )
-                *(Mensagem + i) = 'z';
+            if (*(Mensagem + i) == 'A')
+                *(Mensagem + i) = 'Z';
             else
                 *(Mensagem + i) -= 1;
         }
         else
         {
-            if (*(Mensagem + i) == 'Z' || *(Mensagem + i) == 'z')
-                *(Mensagem + i) = 'a';
+            if (*(Mensagem + i) == 'Z')
+                *(Mensagem + i) = 'A';
             else
                 *(Mensagem + i) += 1;
         }
@@ -42,7 +42,7 @@ int main()
         {
             if (isalpha(*(Mensagem + i)))
             {
-                *(Mensagem + i) = *(Mensagem + i);
+                *(Mensagem + i) = toupper(*(Mensagem + i));
             }
         }
 
