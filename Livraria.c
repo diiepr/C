@@ -18,7 +18,7 @@ typedef struct Livraria
 }Livraria;
 
 
-    void preencheLivro(Brito *novo)
+void preencheLivro(Brito *novo)
 {
     printf("\nDigite o titulo: ");
     scanf(" %99[^\n]", novo->titulo);
